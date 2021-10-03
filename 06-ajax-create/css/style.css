@@ -1,0 +1,79 @@
+/*reset*/
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: content-box;
+}
+
+/*globales*/
+
+body{
+	margin: 20px;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+/*estilos para mostar contenido en index*/
+
+#form_mail{
+	display: block;
+	padding: 5px;
+	width: 300px;
+	border: 4px solid #00F2DB;
+	border-radius: 10px;
+	box-shadow: 10px 10px 0px 0px rgba(0, 240, 220, 0.2);
+}
+
+input,
+textarea{
+	display: block;
+	margin: 10px;
+	padding: 10px;
+	width: 260px;
+	border: 1px solid #00F2DB;
+	border-radius: 10px;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+textarea:focus,
+input:focus{
+    outline: none;
+    border: 1px solid #888;
+}
+
+textarea::placeholder,
+input::placeholder{
+	color: #888;
+}
+
+input{
+	height: 20px;
+}
+
+textarea{
+	height: 100px;
+}
+
+input[name="submit"] {
+	background: #00F2DB;
+	color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	font-weight: bold;
+}
+
+/*estilos para mostar contenido en backend*/
+
+.tag{
+	padding: 30px;
+	width: 300px;
+	border: 4px solid #ccc;
+	border-radius: 30px;
+}
+
+.tag div{
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px dotted #ccc;
+}
