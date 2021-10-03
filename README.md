@@ -1,4 +1,6 @@
-# Forms
+# ![alt text](./img/__icon_form_1.svg) Forms
+
+<img src="img/__icon_form_1.svg" raw=true style="width: 100px;"/>
 
 Una guia desarrollo de formularios formularios.
 
