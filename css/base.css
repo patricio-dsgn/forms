@@ -69,7 +69,6 @@ h6 {
 header {
     display: flex;
     flex-direction: column;
-    padding: 20px;
     padding: 20px 70px;
     margin-bottom: 20px;
 
@@ -229,9 +228,17 @@ footer {
     position: relative;
     display: inline-block;
     width: 30%;
+    vertical-align: top;
+    box-shadow: 0 0 1px 0px #000 inset ;
 }
 
 
+/*.zone:nth-child(1),*/
+.zone:nth-child(2),
+.zone:nth-child(3) {
+    padding: 20px 10px;
+
+}
 
 
 .btn {
@@ -502,15 +509,26 @@ nav.map ul li a {
         font-size: 20px;
     }
 
+    header,
+    section {
+        padding: 20px;
+    }
+
+    p,
+    .main{
+        margin: 20px 0;
+    }
+
     .block,
     .col {
         width: 100%;
-        display: block
+        display: block;
+        text-align: center;
     }
 
     .prop4 {
         display: inline-block;
-        width: 14%;
+        width: 16%;
         margin: 0;
         vertical-align: top;
     }
@@ -520,6 +538,14 @@ nav.map ul li a {
         vertical-align: top
     }
 
+    .prop2 img{
+        width: 40%;
+
+    }
+
+    .prop2 p:nth-child(3) {
+        height: 20px;
+    }
 
     .btn-demo,
     .btn-download,
