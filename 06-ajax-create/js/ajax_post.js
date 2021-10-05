@@ -1,4 +1,4 @@
-function postStuff(){
+function postStuff() {
 
     // XMLHttpRequest object (ajax)
     var hr = new XMLHttpRequest();
@@ -7,7 +7,7 @@ function postStuff(){
     var url = "./xhr.php";
     var var1 = document.getElementById("var1").value;
 
-    var vars ="ajax_var1="+var1;
+    var vars = "ajax_var1=" + var1;
 
     hr.open("POST", url, true);
     hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -15,7 +15,7 @@ function postStuff(){
     // Access the onreadystatechange event for the XMLHttpRequest object
     hr.onreadystatechange = function() {
         console.log(hr);
-        if(hr.readyState == 4 && hr.status == 200) {
+        if (hr.readyState == 4 && hr.status == 200) {
             var return_data = hr.responseText;
             document.getElementById("status").innerHTML = return_data;
         }

@@ -1,17 +1,17 @@
 // function for get info
 function loadText() {
-  // loading
-  document.getElementById("demo").innerHTML = "loading...";
+    // loading
+    document.getElementById("demo").innerHTML = "loading...";
 
-  // XMLHttpRequest (ajax)
-  const xhttp = new XMLHttpRequest();
+    // XMLHttpRequest (ajax)
+    const xhttp = new XMLHttpRequest();
 
-  // cargar la info en div
-  xhttp.onload = function() {
-    document.getElementById("demo").innerHTML = this.responseText;
-  }
-  xhttp.open("GET", "./data-get/ajax_info.txt");
-  xhttp.send();
+    // cargar la info en div
+    xhttp.onload = function() {
+        document.getElementById("demo").innerHTML = this.responseText;
+    }
+    xhttp.open("GET", "./data-get/ajax_info.txt");
+    xhttp.send();
 }
 
 // btn que llama la información

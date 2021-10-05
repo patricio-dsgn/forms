@@ -16,7 +16,6 @@
 	</ul>
 
 	<form id="form_mail" action="backend.php" method="post">
-	<!-- <form id="myForm" name="myForm" action="./backend.php" method="post"> -->
 
 		<input type="text" id="name" name="name" placeholder="Nombre">
 		<input type="text" id="phone" name="phone" placeholder="Teléfono">

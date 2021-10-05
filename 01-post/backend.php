@@ -1,7 +1,6 @@
 <?php
 
 // crear variables - - - - -
-
 $name    = $_POST["name"];
 $phone   = $_POST["phone"];
 $email   = $_POST["email"];
@@ -28,6 +27,5 @@ echo'<!DOCTYPE html>
 
 </body>
 </html>';
-
 
 ?>

@@ -1,4 +1,4 @@
-    function sendMail(){
+    function sendMail() {
 
         // XMLHttpRequest object (ajax)
         var hr = new XMLHttpRequest();
@@ -19,7 +19,7 @@
         obj.classList.remove("success");
         if (obj.value == "") {
             obj.classList.add("error");
-        }else{
+        } else {
             obj.classList.add("success");
         }
 
@@ -28,7 +28,7 @@
         obj.classList.remove("success");
         if (obj.value == "") {
             obj.classList.add("error");
-        }else{
+        } else {
             obj.classList.add("success");
         }
 
@@ -37,7 +37,7 @@
         obj.classList.remove("success");
         if (obj.value == "") {
             obj.classList.add("error");
-        }else{
+        } else {
             obj.classList.add("success");
         }
 
@@ -46,7 +46,7 @@
         obj.classList.remove("success");
         if (obj.value == "") {
             obj.classList.add("error");
-        }else{
+        } else {
             obj.classList.add("success");
         }
 
@@ -57,17 +57,16 @@
         var var_message
 
         if (
-            (var_name.value != "")&&
-            (var_phone.value != "")&&
-            (var_email.value != "")&&
+            (var_name.value != "") &&
+            (var_phone.value != "") &&
+            (var_email.value != "") &&
             (var_message.value != "")
-        ){
+        ) {
             var vars =
-                "ajax_var_name="+(var_name.value)
-                +"&ajax_var_phone="+(var_phone.value)
-                +"&ajax_var_email="+(var_email.value)
-                +"&ajax_var_message="+(var_message.value)
-            ;
+                "ajax_var_name=" + (var_name.value) +
+                "&ajax_var_phone=" + (var_phone.value) +
+                "&ajax_var_email=" + (var_email.value) +
+                "&ajax_var_message=" + (var_message.value);
 
             hr.open("POST", url, true);
             hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -75,7 +74,7 @@
             // Access the onreadystatechange event for the XMLHttpRequest object
             hr.onreadystatechange = function() {
                 console.log(hr);
-                if(hr.readyState == 4 && hr.status == 200) {
+                if (hr.readyState == 4 && hr.status == 200) {
                     var return_data = hr.responseText;
                     document.getElementById("status").innerHTML = return_data;
                 }
